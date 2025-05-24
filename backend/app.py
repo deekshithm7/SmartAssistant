@@ -19,7 +19,7 @@ def chat():
 
     reminder = check_reminders()
     if reminder:
-        reply += f" 🔔 {reminder}"
+        reply += f" {reminder}"
 
     return jsonify({"reply": reply})
 
