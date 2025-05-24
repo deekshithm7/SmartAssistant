@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_openai import ChatOpenAI  # ✅ Updated import path
+from langchain_openai import ChatOpenAI  
 
 load_dotenv()
 
@@ -13,4 +13,4 @@ llm = ChatOpenAI(
 
 def chat_response(prompt):
     response = llm.invoke(prompt)
-    return response.content  # ✅ Extracts just the text to be JSON-safe
+    return response.content  
